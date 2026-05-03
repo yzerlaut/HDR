@@ -1,0 +1,1 @@
+C'est un résumé en français
