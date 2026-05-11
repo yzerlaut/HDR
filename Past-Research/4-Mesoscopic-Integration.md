@@ -1,5 +1,9 @@
 # Mesoscopic Integration in the Sensory Cortex
 
+- techniques from statistical physics enable to derive equations of the macroscopic dynamics of 
+- test
+
+
 Modelling of the “apparent motion” illusion in the visual cortex  
 [Zerlaut et al., _J. Comput. Neurosci._ (2017)](https://drive.google.com/file/d/1V3r2XS9gTY_NPh2wTd2t2qaOyNN5WJUv/view?usp=share_link) ( & [Chemla et al., _J. Neurosci._ (2019)](https://drive.google.com/file/d/1siyxrKMRYJFUpYdFETW0W6ne_O8qhLKz/view?usp=share_link) )
 
