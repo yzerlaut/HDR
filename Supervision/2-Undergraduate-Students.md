@@ -18,3 +18,6 @@
 	Licence .   
 	Université Cergy-Pontoise.  
 	
+- Aurélien Daurat. 
+	Université LaSalle, Amiens. 
+	M1	
