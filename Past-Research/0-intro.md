@@ -1,6 +1,6 @@
 My past research has focused on explaining the 
 
-I show in [Fig.](../Figures/intra-in-vivo.svg) the membrane (see also [Poulet & Petersen, 2010](../Library/Poulet2010.pdf)).
+I show in [Fig.](../Figures/intra-in-vivo.svg) the membrane (see also [Poulet & Petersen, 2010](Poulet2010.pdf)).
 [Zerlaut et al., 2019](Zerlaut2019.pdf)
 
 %%beginFigure%%
