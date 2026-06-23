@@ -1,4 +1,3 @@
-# Dynamics of Thalamo-Cortical Networks during Wakefulness
 
 Previous work on thalamo-cortical dynamics
 mostly focused on the sleep-wake transitions

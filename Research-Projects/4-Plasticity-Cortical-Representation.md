@@ -1,8 +1,0 @@
-# Plasticity of Cortical Representation
-
-[...]
-
-
-
-
-
