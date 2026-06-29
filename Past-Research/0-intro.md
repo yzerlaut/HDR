@@ -1,12 +1,23 @@
-The design behind modern Artificial Intelligence (AI) systems nicely illustrate how *"we"* conceive an efficient information processing system. In short, this can be put as high Signal-to-Noise (SNR) systems. 
+Recent years have seen a tremendous development of Artificial Intelligence (AI) systems and thus offer a interesting viewpoint to compare with the processing unit we're most familiar with: the brain.
 
-On the other hand,  
+AI is catching up on many aspects of human cognition, such as ..., but there is one aspect where it is not. Energy. It’s even getting worse and worse.
 
-AI is catching up on many aspects of human cognition, but there is one aspect where it is not. Energy. It’s even getting worse and worse.
+Considering very rough estimates, a frontier Large Language Model (LLM) answering to a complex request will rely on the usage of multiple Graphical Processing Units (GPUs) running at a total power of around 10.000 Watts\footnote{e.g. the DGX H100 from Nvidia, see https://docs.nvidia.com/dgx/dgxh100-user-guide/}. In contrast, the brain runs at approximately ~12 Watts [Sterling & Laughlin, 2015](Sterling2015.pdf)
+
+This number tells us how far we are from understanding the brain.
+
+Overall, the design behind modern Artificial Intelligence (AI) systems nicely illustrate how *"we"* conceive an efficient information processing system. The core principle is a high Signal-to-Noise (SNR) system working on very high-dimensional data.
 
 
+| quantity | AI Systems         | Brain    |
+| -------- | ------------------ | -------- |
+| voltage  | 0.5-1volt          |          |
+| currents | micro- to milliamp | picoamps |
+|          |                    |          |
 
-This number tells us how far we are from Understanding the brain.
+
+On the other hand, the brain 
+
 Unfair comparison. 100 years of computer science Vs billions of years of evolution
 
 
