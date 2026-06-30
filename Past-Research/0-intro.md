@@ -7,7 +7,7 @@ Forme :
 - rédigé en police Time New Roman, taille 12, interligne 1,5,
 - les paragraphes doivent être justifiés.
 A ce mémoire s’ajoute la copie des 10 travaux (au maximum) jugés les plus représentatifs par le candidat (importance des résultats, prestige de la revue, importances des collaborations).
-### *Specificity of cerebral working regime*
+### *The very particular working regime of the brain*
 
 Recent years have seen a tremendous development of Artificial Intelligence (AI) systems and thus offer a interesting viewpoint to compare with the processing unit we're most familiar with: the brain.
 
@@ -29,7 +29,6 @@ Overall, the design behind modern Artificial Intelligence (AI) systems nicely il
 | currents | micro- to milliamp | picoamps |
 |          |                    |          |
 
-
 On the other hand, the brain 
 
 Unfair comparison. 100 years of computer science Vs billions of years of evolution
@@ -45,7 +44,6 @@ This three-orders-of-magnitude gap is a sobering reminder of how far we remain f
 More broadly, the design choices underlying modern AI systems offer a revealing mirror of how "we" conceive of an efficient information-processing system: largely as a high-Signal-to-Noise-Ratio (SNR) architecture operating on very high-dimensional data.
 
 
-
 My past research has focused on explaining the 
 
 I show in [Fig.](../Figures/intra-in-vivo.svg) the membrane (see also [Poulet & Petersen, 2010](Poulet2010.pdf)).
@@ -57,9 +55,4 @@ I show in [Fig.](../Figures/intra-in-vivo.svg) the membrane (see also [Poulet & 
 %%endFigure%%
 
 From this ...
-
-%%beginFigure%%
-![](../Figures/microns.svg)   
-**Membrane potential dynamics of a single pyramidal neuron in the sensory cortex of an awake mouse.**  Whole-cell patch-clamp intracellular recording in the supragranular layer of the primary somatosensory cortex. Data from [Zerlaut et al., 2019](Zerlaut2019.pdf).
-%%endFigure%%
 

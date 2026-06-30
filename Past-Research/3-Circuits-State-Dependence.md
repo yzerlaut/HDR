@@ -1,5 +1,11 @@
 # Cortical Circuits of State-Dependent Processing
 
+%%beginFigure%%
+![](../Figures/microns.svg)   
+**MICrONs dataset**.   Whole-cell patch-clamp intracellular recording in the supragranular layer of the primary somatosensory cortex. Data from [Zerlaut et al., 2019](Zerlaut2019.pdf).
+%%endFigure%%
+
+
 Visual-area-specific tonic modulation of GABA release by endocannabinoids sets the activity and coordination of neocortical principal neurons [Koukouli et al., _Cell Reports_ (2022)](https://drive.google.com/file/d/1k9hysvdBHi_w2uhqTS5ZnO98Utpq9Ky-/view?usp=share_link)
 
 In this collaboration with the _Cortical Microcircuits_ team at ICM (led by A. Bacci and J. Lourenço), I derived and implemented a model for an atypical inhibitory circuit motif. I performed the network simulations to analyse the emergent dynamics introduced by this specific circuit and its modulatory action on network function.

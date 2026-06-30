@@ -6,7 +6,7 @@
 
 - 2012: **[M.Sc. Cognitive Science]{.underline}**\
     EHESS Paris, ENS Paris, Université Paris V\
-    Specialty: Mathematical and Physical modeling
+    Specialty: Mathematical and Physical modelling
 
 - 2011: **[M.Sc. Complex Systems Physics]{.underline}\
     **Sorbonne Universités (Paris, France)\

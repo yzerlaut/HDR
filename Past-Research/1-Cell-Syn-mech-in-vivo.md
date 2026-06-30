@@ -2,14 +2,7 @@
 
 An important contribution of my past research has been to evaluate cellular mechanisms in the context of *in vivo-like* activity.
 
-
-%% Fig. [Test.png](../Figures/Test.png)  around here ! %%
-**Discrepancy between firing patterns in response to either step protocol stimulation or stochastic fluctuations in single cell models.** From top to bottom we stimulate 4 different parameter configurations of the AdExp model.
-**(a)** This is a draft legend. 
-**(b)** This is also a draft legend. 
-
-
-I generate some simulations here base on the Brian2 simulator ([Stimberg et al., 2019](Stimberg2019.pdf))
+I generate some simulations here based on the Brian2 simulator ([Stimberg et al., 2019](Stimberg2019.pdf))
 [Brette & Gerstner, 2005](Brette2005.pdf) 
 Single cell equation:
 $$
@@ -22,17 +15,18 @@ $$
 Some parameters were fixed to $E_L$ =-65mV, $C_m$=200pF, $\tau_w$=200ms, $\tau_{refrac}$=5ms, $V_{reset}$=-65mV. 
 The other () were varied as shown in the figure.
 
-I describe below a few scientific contributions that illustrate particularly well my research profile. Notably, I focus on those that show the mixed experimental and theoretical expertise on cortical dynamics that are necessary for the completion of my research project.
+ write here a reference to [Fig.](../Figures/model-step-noise.svg)A
 
- write here a reference to [Fig.](../Figures/Test.png)A
+%%beginFigure%%
+![](../Figures/model-step-noise.svg)   
+**Discrepancy between firing patterns in response to either step protocol stimulation or stochastic fluctuations in single cell models.** From top to bottom we stimulate 4 different parameter configurations of the AdExp model.
+**(a)** This is a draft legend. 
+**(b)** This is also a draft legend. 
+%%endFigure%%
 
 
 
-
-The Spectrum of Asynchronous Dynamics in Spiking Networks as a Model for the Diversity of Non-Rhythmic Waking States in Neocortex [Zerlaut et al., 2019](Zerlaut2019.pdf)
-
-
-**6. Heterogeneous firing rate response of mouse layer V pyramidal neurons in the fluctuation‐driven regime**  
+**1. Heterogeneous firing rate response of mouse layer V pyramidal neurons in the fluctuation‐driven regime**  
         [Zerlaut et al., _Journal of Physiology_ (2016)](https://drive.google.com/file/d/1FKILNz_0ustMmVzz0hbp4l8aO6B5B6Xs/view?usp=share_link)
 
   
