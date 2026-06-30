@@ -67,6 +67,7 @@ for fn in sys.argv[1:]:
                     full_authors = ''
                     authors = entry['author'].split('and') 
                     nMax = min([len(authors),15])
+
                     for author in authors[:nMax-1]:
                         # 15 authors max
                         full_authors += reshape(author)+','
@@ -75,9 +76,14 @@ for fn in sys.argv[1:]:
                     elif len(authors)>1:
                         full_authors = full_authors[:-1]+\
                                 ' and'+reshape(authors[-1])
-                    journal = entry['journal']
-                    if 'volume' in entry and entry['volume']!='':
-                        journal += ' (%s)' % entry['volume'] 
+
+                    if 'journal' in entry:
+                        journal = entry['journal']
+                        if 'volume' in entry and entry['volume']!='':
+                            journal += ' (%s)' % entry['volume'] 
+                    elif 'publisher' in entry:
+                        journal = entry['publisher']
+
                     num_pages = ''
                     if 'number' in entry and entry['number']!='':
                         num_pages += entry['number'] 
