@@ -7,4 +7,3 @@
 ```
 bash build/script.sh
 ```
-
