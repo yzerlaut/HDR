@@ -1,4 +1,6 @@
-Il s’agit d’un mémoire qui présente l’ensemble des recherches du candidat et le situe par rapport à la littérature internationale, en regroupant les travaux sur les principales thématiques de recherche.
+Il s’agit d’un mémoire qui présente l’ensemble des recherches du candidat et le situe par rapport à la littérature internationale, en regroupant les travaux sur les principales thématiques de recherche. 
+
+
 
 Forme :
 - une 20aine de pages (type article de synthèse),
