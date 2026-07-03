@@ -51,7 +51,7 @@ I show in [Fig.](../Figures/intra-in-vivo.svg) the membrane (see also [Poulet & 
 
 %%beginFigure%%
 ![](../Figures/intra-in-vivo.svg)   
-**Neural activity from the single neuron perspective during wakefulness. Membrane potential dynamics of a single pyramidal neuron in the sensory cortex of an awake mouse.**  Whole-cell patch-clamp intracellular recording in the supragranular layer of the primary somatosensory cortex. Data from [Zerlaut et al., 2019](Zerlaut2019.pdf).
+**Neural activity from the single neuron perspective.**  Membrane potential dynamics of a single pyramidal neuron in the mouse somato-sensory cortex during wakefulness. Whole-cell patch-clamp intracellular recording in the supragranular layer of the primary somatosensory cortex. Data from [Zerlaut et al., 2019](Zerlaut2019.pdf).
 %%endFigure%%
 
 From this ...
