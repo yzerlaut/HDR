@@ -1,21 +1,21 @@
 # Post-doctoral training
 
--   2020-2024. *Post-doctoral fellow*. **Institut du Cerveau**\
+-   2020-2024. *Post-doctoral fellow*. **Institut du Cerveau**
     Neurophysiology department. Hôpital Pitié-Salpêtrière, Paris
     (France)\
-    Supervisors: Dr N. Rebola & Dr A. Bacci\
+    Supervisors: Dr N. Rebola & Dr A. Bacci
     *Contextual Modulation of Cortical Computations through
     Interneuronal Networks*
 
 -   2019-2020. *Post-doctoral fellow*. **Centre National de la Recherche
     Scientifique**\
-    Neuroinformatics group. Gif sur Yvette (France)\
+    Neuroinformatics group. Gif sur Yvette (France)
     Supervisor: Dr. Andrew Davison\
     *Model sharing and Data Management in Neuroscience through the
     Ebrains Platform* ([[ebrains.eu]{.underline}](http://ebrains.eu))
 
 -   2016-2019. *Post-doctoral fellow*. **Italian Institute of
-    Technology**\
+    Technology**
     Neural Coding laboratory. Rovereto & Genova (Italy)\
     Supervisors: Dr. Tommaso Fellin and Dr. Stefano Panzeri\
     *Modelling and Analysis of Network States during Wakefulness in

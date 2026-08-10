@@ -11,7 +11,9 @@ for fn in sys.argv[1:]:
     for S in text.split("\%\%beginFigure\%\%")[1:]:
 
         old_fig = S.split('}')[0].split('{')[1]
+
         key = S.split('}')[0].split('/')[-1].replace('.png','').replace('.svg','') # png or svg
+
         print('Figure %i.' % n, key, old_fig)
 
         S = "\%\%beginFigure\%\%"+S
@@ -20,14 +22,15 @@ for fn in sys.argv[1:]:
                                     "\%\%endFigure\%\%"
 
         # print(old_fig_string)
+
         new_fig_string = old_fig_string.replace(\
-                "\%\%beginFigure\%\%", "\\begin{figure}\n")
+                "\%\%beginFigure\%\%", "\\begin{figure}[b!]\n\small \makebox[\\textwidth][c]{")
 
         new_fig_string = new_fig_string.replace(\
                 "\\textbf{", "\\textbf{\hypertarget{fig:%s}{Figure %i}. " % (key,n))
 
         new_fig_string = new_fig_string.replace(\
-                "\%\%endFigure\%\%", "\end{figure}")
+                "\%\%endFigure\%\%", "\n \end{figure}")
 
         # new_fig_string = new_fig_string.replace(\
                 # "../Figures", "./temp/Figures")
@@ -38,8 +41,17 @@ for fn in sys.argv[1:]:
         new_fig_string = new_fig_string.replace(\
                 ".svg", ".png")
 
-        text = text.replace("\href{%s}{Fig.}" % old_fig,
-                            "\hyperlink{fig:%s}{Fig. %i}" % (key,n))
+        for l in ['a', 'b', 'c', 'd', 'e', 'f']:
+            new_fig_string = new_fig_string.replace(\
+                    "(%s) " % l, "\\textbf{(%s)} " % l)
+
+        # need to close the bracket of the \makebox
+        new_fig_string = new_fig_string.replace(\
+                ".png}", ".png}}")
+
+
+        text = text.replace("\href{%s}{Fig." % old_fig,
+                            "\hyperlink{fig:%s}{Fig. %i" % (key,n))
 
         text = text.replace(old_fig_string, new_fig_string)
 

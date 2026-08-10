@@ -1,6 +1,8 @@
 
 | Year | Grant                                  | Amount (k€) |
 | ---- | -------------------------------------- | ----------- |
+| 2026 | VANILA - AAPG                          | 180         |
+|      | (Agence Nationale de la Recherche)     |             |
 | 2024 | **Chaire de Professeur Junior**.       | 200         |
 |      | (Agence Nationale de la Recherche)     |             |
 | 2020 | **Marie Sklodowska-Curie fellowship**  | 190         |

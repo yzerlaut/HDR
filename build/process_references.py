@@ -9,11 +9,19 @@ bibfile = os.path.expanduser(\
 
 def reshape(author):
     # author is a string of type "Zerlaut, Yann Thomas"
-    s = author.split(', ')[0]+' '
-    for ss in author.split(', ')[1].split(' '):
-        if len(ss)>0:
-            s += ss[0]
-    return s
+    try:
+        s = author.split(', ')[0]+' '
+        for ss in author.split(', ')[1].split(' '):
+            if len(ss)>0:
+                s += ss[0]+'.'
+        return s
+    except BaseException as be:
+        print(be)
+        print()
+        print(' [!!] pb with author : "%s" ' % author)
+        print()
+        return ''
+
 
 if not os.path.isfile(bibfile):
     print()
@@ -68,9 +76,12 @@ for fn in sys.argv[1:]:
                     authors = entry['author'].split('and') 
                     nMax = min([len(authors),15])
 
-                    for author in authors[:nMax-1]:
-                        # 15 authors max
-                        full_authors += reshape(author)+','
+                    if len(authors)==1:
+                        full_authors = reshape(authors[0])
+                    else:
+                        for author in authors[:nMax-1]:
+                            # 15 authors max
+                            full_authors += reshape(author)+','
                     if len(authors)>15:
                         full_authors = full_authors[:-1]+' et al'
                     elif len(authors)>1:

@@ -1,6 +1,25 @@
+# Scientific Publications
+
+### Summary Table and Publications Metrics
 
 
-# Peer-Reviewed Scientific Articles
+\begin{center}
+\begin{tabular}{ c|c|c } 
+ \textbf{SIGAPS journal rank} & \textbf{\# as first/last author} & \textbf{\# as middle author} \\
+ \hline 
+ A &  4 &  2 \\
+ B & 4 & 4 \\
+ Others &  1 &  0 \\
+\end{tabular}
+\end{center}
+
+  
+- *SIGAPS* score for \underline{all publications}: 296
+- *SIGAPS* score including \underline{only original research articles}: 240
+- *H* index:  11 (source [Google scholar](https://scholar.google.com/citations?user=ISDtiagAAAAJ&hl=en))
+- citation number: 554 (source [Google scholar](https://scholar.google.com/citations?user=ISDtiagAAAAJ&hl=en))
+
+### List of all Peer-Reviewed Scientific Articles
 
 * 15. **_Distinct dendritic integration strategies control dynamics of inhibition in the neocortex_**.    
 	Morabito A\*, __Zerlaut Y\*__ , Dhanasobhon D, Berthaux E, Martins Pinho C, Tzilivaki A, Moneron G, Cathala L, Poirazi P, Bacci A, Digregorio D, Lourenco J & N Rebola (* co-first authors).  
@@ -8,12 +27,12 @@
 	DOI: [10.1016/j.neuron.2025.05.029](https://doi.org/10.1016/j.neuron.2025.05.029), [link to pdf](https://www.sciencedirect.com/science/article/pii/S0896627325004295/pdfft?md5=be651025975a8645d689cc705f409fb4&pid=1-s2.0-S0896627325004295-main.pdf)   
 
 * 14. **_Interneuronal Modulations as a functional switch for cortical computations: Mechanisms and Implication for disease._**   
-	Zerlaut Y & A Tzilivaki.      
+	__Zerlaut Y__ & A Tzilivaki.      
 	*Frontiers in Cellular Neuroscience* 18 (2025): 1479579.  
 	DOI: [10.3389/fncel.2024.1479579](https://doi.org/10.3389/fncel.2024.1479579), [link to pdf](https://public-pages-files-2025.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2024.1479579/pdf)
 
 * 13. **_Feedforward and disinhibitory circuits differentially control activity of cortical somatostatin interneurons during behavioral state transitions._**.  
-	. e Brito Van Velze M, Dhanasobhon D, Martinez M, Morabito A, Berthaux E, Martins Pinho C, **Zerlaut Y\*** & N Rebola\* (<ins>\*co-last authors</ins>).   
+	De Brito Van Velze M, Dhanasobhon D, Martinez M, Morabito A, Berthaux E, Martins Pinho C, **Zerlaut Y\*** & N Rebola\* (<ins>\*co-last authors</ins>).   
 	*Cell Reports* 43.5 (2024).     
 	DOI: [10.1016/j.celrep.2024.114197](https://doi.org/10.1016/j.celrep.2024.114197), [link to pdf](https://www.cell.com/action/showPdf?pii=S2211-1247%2824%2900525-4)     
  
@@ -77,22 +96,19 @@
 	*Journal of Neuroscience* 35.6 (2015): 2689-2702.   
 	DOI: [10.1523/JNEUROSCI.2004-14.2015](https://doi.org/10.1523/JNEUROSCI.2004-14.2015), [link to pdf](https://www.jneurosci.org/content/jneuro/35/6/2689.full.pdf)   
 
-# Other Publications
 
-In addition to peer-reviewed articles, the lab also publishes experimental datasets and theoretical models, listed below:
+### Other Scientific Publications
+
+In addition to peer-reviewed articles, the laboratory also openly publishes experimental datasets and theoretical models, listed below:
 
 * Experimental Datasets
 	See our [Dataset list on the EBrains platform](https://search.kg.ebrains.eu/?category=Dataset&q=Zerlaut%20Y):
-	
-	, * 2) [NMDA-Receptor component to visually-evoked activity in somatostatin-positive interneurons](https://search.kg.ebrains.eu/?category=Dataset&q=Zerlaut%20Y#b8857578-7cd0-44a9-8790-95655801ffe3)
-	
-	, * 1) [Input Impedance Recordings in Neocortical Pyramidal cells](https://search.kg.ebrains.eu/?category=Dataset&q=Zerlaut%20Y#5a95ceb4-e303-42e3-9558-83b9ccb45976)
+	-  2. [NMDA-Receptor component to visually-evoked activity in somatostatin-positive interneurons](https://search.kg.ebrains.eu/?category=Dataset&q=Zerlaut%20Y#b8857578-7cd0-44a9-8790-95655801ffe3)
+	- 1.  [Input Impedance Recordings in Neocortical Pyramidal cells](https://search.kg.ebrains.eu/?category=Dataset&q=Zerlaut%20Y#5a95ceb4-e303-42e3-9558-83b9ccb45976)
 
 * Theoretical Models
-	See our [Released Model list on the EBrains platform](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y)
-	
-	, * 3) [Network model of spontaneous activity in cortex](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y#cd7f3ec5-3241-45e5-a658-a61b56dc5bc9)
-	
-	, * 2) [Rall Morphology Model for Layer 5 Pyramidal Cells in Mouse V1](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y#a8b0d44a-267d-4cd5-b205-eee5c052603f)
-	
-	, * 1) [Mean-field Model of AdEx networks](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y#bc3b915f-1ef4-43bc-890b-8b5098d080da)
+	See our [Released Model list on the EBrains platform](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y):
+	- 3. [Network model of spontaneous activity in cortex](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y#cd7f3ec5-3241-45e5-a658-a61b56dc5bc9)
+	- 2.  [Rall Morphology Model for Layer 5 Pyramidal Cells in Mouse V1](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y#a8b0d44a-267d-4cd5-b205-eee5c052603f)
+	- 1.  [Mean-field Model of AdEx networks](https://search.kg.ebrains.eu/?category=Model&q=Zerlaut%20Y#bc3b915f-1ef4-43bc-890b-8b5098d080da)
+
