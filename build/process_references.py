@@ -10,11 +10,14 @@ bibfile = os.path.expanduser(\
 def reshape(author):
     # author is a string of type "Zerlaut, Yann Thomas"
     try:
-        s = author.split(', ')[0]+' '
-        for ss in author.split(', ')[1].split(' '):
-            if len(ss)>0:
-                s += ss[0]+'.'
-        return s
+        if 'others' in author:
+            return author
+        else:
+            s = author.split(', ')[0]+' '
+            for ss in author.split(', ')[1].split(' '):
+                if len(ss)>0:
+                    s += ss[0]+'.'
+            return s
     except BaseException as be:
         print(be)
         print()
@@ -41,6 +44,7 @@ else:
     entries = np.array(\
         [ent['ID'] for ent in db.entries])
 
+keys = []
 for fn in sys.argv[1:]:
 
     with open(fn, 'r') as f:
@@ -49,22 +53,31 @@ for fn in sys.argv[1:]:
     # os.remove(fn)
 
     # 1) grab from main document:
-    keys = []
-    for k in text.split('\href{'):
+    for k in text.split('\\href{'):
         key = k.split('}')[0]
         if '.pdf' in key:
             keys.append(key)
 
-    # 2) sort in alphabetical order
-    keys = np.sort(keys)
 
+#
+# remove duplicate and sort alphabetically
+keys = list(
+        np.sort(\
+            np.unique(keys)))
+
+
+for fn in sys.argv[1:]:
+
+    with open(fn, 'r') as f:
+        text = str(f.read())
 
     for i, k in enumerate(keys):
 
         key = k.replace('.pdf','') # real key
         text = text.replace("href{%s}" % k, "hyperlink{%s}" % key)
-
-        if len(references.split('\hypertarget{%s}' % key))<=1:
+    
+        print('------- %s ' % key)
+        if len(references.split('\\hypertarget{%s}' % key))<=1:
 
             if db is not None:
 
@@ -73,7 +86,7 @@ for fn in sys.argv[1:]:
                 if len(i0)==1:
                     entry = db.entries[i0[0]]
                     full_authors = ''
-                    authors = entry['author'].split('and') 
+                    authors = entry['author'].split('and ') 
                     nMax = min([len(authors),15])
 
                     if len(authors)==1:
@@ -86,7 +99,7 @@ for fn in sys.argv[1:]:
                         full_authors = full_authors[:-1]+' et al'
                     elif len(authors)>1:
                         full_authors = full_authors[:-1]+\
-                                ' and'+reshape(authors[-1])
+                                ' and '+reshape(authors[-1])
 
                     if 'journal' in entry:
                         journal = entry['journal']
@@ -111,10 +124,10 @@ for fn in sys.argv[1:]:
                              journal, num_pages)
                     # print(formatted_ref)
                     if 'doi' in entry and entry['doi']!='':
-                        references += """\hypertarget{%s}{%s} \href{%s}{doi:%s} \\\\[.2cm]
+                        references += """\\hypertarget{%s}{%s} \\href{%s}{doi:%s} \\\\[.2cm]
                     """ % (key, formatted_ref, 
                            'https://doi.org/'+entry['doi'],
-                           entry['doi'])
+                           entry['doi'].replace('_','-'))
                 else:
                     print()
                     print(' --- reference key: %s' % key )
@@ -125,7 +138,7 @@ for fn in sys.argv[1:]:
                 print(key)
 
                 references += """
-            \hypertarget{%s}{%s} \\\\[.2cm]
+            \\hypertarget{%s}{%s} \\\\[.2cm]
             """ % (key, key)
 
     with open(fn, 'w') as f:

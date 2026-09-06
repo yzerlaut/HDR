@@ -1,0 +1,176 @@
+\documentclass[12pt,twoside]{report}
+
+%% TURN TO TRUE TO INCLUDE ALL PDFS %%
+\usepackage{ifthen}
+\newboolean{fullpdfs}
+\setboolean{fullpdfs}{false}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable, graphicx, soul, booktabs, array} 
+\usepackage{float, wrapfig, rotating, graphicx, multirow, xcolor}
+\usepackage{amsmath, textcomp, marvosym, wasysym, amssymb, soul}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{setspace}
+\usepackage[pages=some]{background} 
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{comment}
+\usepackage{svg}
+
+\usepackage{chngcntr}
+\counterwithin*{section}{part}
+
+\backgroundsetup{firstpage = true, scale = 1, angle = 0, opacity = 1, contents = {\includegraphics[width = \paperwidth, height = \paperheight] {../pieces/titlepage.pdf}}} 
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\renewcommand{\thesection}{\arabic{section}} % get rid of chapter level
+\hypersetup{allcolors = [rgb]{0.1,0.1,0.6} } % to have all the hyperlinks in 1 col
+%\hypersetup{allcolors=blue}
+\date{}
+\author{Yann Zerlaut}
+
+\usepackage{tocloft}
+\setlength{\cftbeforetoctitleskip}{-0.5cm}
+
+\begin{document}
+
+\singlespacing
+\begin{titlepage}
+\begin{center}
+
+        \vspace*{3cm}
+        \vfill
+            
+        %\LARGE
+        \Large
+        \textbf{Dossier d'Habilitation à Diriger les Recherches}
+            
+        \vspace{1.4cm}
+
+        \textsc{Yann Zerlaut}\\
+        \vspace{.8cm}
+        \large
+        \textit{Junior Professor of Computational Neuroscience}\\ 
+        \vspace{.3cm}
+        \Large
+        Sorbonne Université\\
+        Paris, France\\
+
+        \vspace{8cm}
+        Spring 2026
+        %\vspace{3cm}
+            
+    \end{center}
+\end{titlepage}
+
+\vspace{-8em}
+
+%\renewcommand{\baselinestretch}{0.9}\normalsize
+\tableofcontents
+%\renewcommand{\baselinestretch}{1.0}\normalsize
+
+\part{Curriculum Vitae}
+\label{part:cv}
+
+\onehalfspacing
+\input{../pieces/Career-Overview.tex}
+
+\singlespacing
+\input{../pieces/Academic-degrees.tex}
+
+\onehalfspacing
+\input{../pieces/Funding.tex}
+
+\singlespacing
+\input{../pieces/Training.tex}
+
+\singlespacing
+\input{../pieces/Publications.tex}
+
+\part{Supervision}
+\label{part:supervision}
+
+\onehalfspacing
+\input{../pieces/Supervision.tex}
+
+\part{Introduction}
+\label{part:intro}
+
+\input{../pieces/Introduction.tex}
+
+\part{Past Research}
+\label{part:past}
+
+\input{../pieces/Past-Research.tex}
+
+\part{Selected Publications}
+\label{part:publis}
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:Zerlaut2016} Zerlaut et al., \textit{J. Physiol.} 2016}}]{/Users/yann/Documents/Research/my_papers/2_Zerlaut-et-al_JPhysiol2016.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+    \includepdf[pages=2-]{/Users/yann/Documents/Research/my_papers/2_Zerlaut-et-al_JPhysiol2016.pdf}
+}{}
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:Zerlaut2017} Zerlaut and Destexhe, \textit{PLoS Comp. Biol., 2017}}}]{/Users/yann/Documents/Research/my_papers/3_Zerlaut-Destexhe_PlosCompBiol2017.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+    \includepdf[pages=2-27]{/Users/yann/Documents/Research/my_papers/3_Zerlaut-Destexhe_PlosCompBiol2017.pdf}
+}{}
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:Morabito2025} Morabito, Zerlaut et al., \textit{Neuron} 2025}}]{/Users/yann/Documents/Research/my_papers/15_Morabito-et-al_Neuron2025.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+\includepdf[pages=2-28]{/Users/yann/Documents/Research/my_papers/15_Morabito-et-al_Neuron2025.pdf}
+}{}
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:Zerlaut2019} Zerlaut, Zucca et al., \textit{Cell Reports, 2019}}}]{/Users/yann/Documents/Research/my_papers/7_Zerlaut-et-al_CellReports2019.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+\includepdf[pages=2-21]{/Users/yann/Documents/Research/my_papers/7_Zerlaut-et-al_CellReports2019.pdf}
+}{}
+
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:Zerlaut2022} Zerlaut et al., \textit{eNeuro} 2022}}]{/Users/yann/Documents/Research/my_papers/11_Zerlaut-et-al_Eneuro2022.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+\includepdf[pages=2-]{/Users/yann/Documents/Research/my_papers/11_Zerlaut-et-al_Eneuro2022.pdf}
+}{}
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:VanVelze2024} De Brito Van Velze et al., \textit{Cell Reports} 2024}}]{/Users/yann/Documents/Research/my_papers/13_VanVelze-et-al_CellReports2024.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+\includepdf[pages=2-23]{/Users/yann/Documents/Research/my_papers/13_VanVelze-et-al_CellReports2024.pdf}
+}{}
+
+\includepdf[pages=1,pagecommand={\transparent{0.02} \section{\label{sec:Zerlaut2018} Zerlaut et al., \textit{J. Comput. Neurosci., 2018}}}]{/Users/yann/Documents/Research/my_papers/5_Zerlaut-et-al_JCompNeurosci2018.pdf}
+\ifthenelse{\boolean{fullpdfs}}{
+\includepdf[pages=2-]{/Users/yann/Documents/Research/my_papers/5_Zerlaut-et-al_JCompNeurosci2018.pdf}
+}{}
+
+\part{Research Projects}
+\label{part:projects}
+
+\input{../pieces/Research-Projects.tex}
+
+\part{References}
+\label{part:refs}
+
+\singlespacing
+
+\input{../pieces/references.tex}
+%\input{../pieces/References.tex}
+\onehalfspacing
+
+\part{PhD Degree, Summary \& Résumé}
+
+\includepdf{/Users/yann/Documents/Administrative/Education/PhD.pdf}
+
+% summaries in small to fit on one page
+{\small
+\section*{Summary}
+\input{../pieces/Summary.tex}
+\newpage
+\section*{Résumé}
+\input{../pieces/Resume.tex}
+}
+
+\end{document}

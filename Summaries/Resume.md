@@ -1,1 +1,15 @@
-C'est un résumé en français
+Mes recherches s'articule autour de l'idée que le traitement de l'information dans le cerveau ne repose pas sur des calculs fixes, déclenchés par les stimuli, s'exécutant sur un substrat par ailleurs silencieux, mais sur la réorganisation continue et dynamique de l'activité neuronale en cours. 
+Ce principe motive la question centrale de mes travaux: comment la réorganisation dynamique de l'activité corticale interagit-elle avec les propriétés de traitement de l'information des réseaux corticaux, et comment les façonne-t-elle ? 
+J'aborde cette question en combinant une approche théorique, de modélisation de dynamique de réseaux neuronaux, et des mesures expérimentales, dans le cortex sensoriel de la souris.
+
+Mes **travaux antérieurs** sont organisés en quatre parties, retraçant une progression de l'échelle cellulaire à l'échelle mésoscopique. 
+Les deux premières parties examinent, respectivement, les mécanismes cellulaires et synaptiques de l'intégration des signaux dans le régime d'activité dit _fluctuation-driven_ qui caractérise le cortex éveillé, puis les différents régimes d'activité de réseau observés pendant l'éveil, au-delà du cadre classique des réseaux balancés, ainsi qu'une méthode de classification de ces états corticaux à partir du potentiel de champ local (LFP). 
+La troisième partie décrit les circuits interneuronaux sous-jacents à ces dynamiques dépendantes de l'état comportemental.
+La quatrième partie intègre ces résultats cellulaires et circuitaires dans des modèles de champ moyen mésoscopiques, validés par imagerie optique voltage-dépendante et appliqués à l'illusion de mouvement apparent, puis généralisés au-delà du cortex.
+
+S'appuyant sur ces travaux, la section **projets de recherche** définit mes quatre axes futurs : tester l'hypothèse selon laquelle différents états comportementaux soutiennent des modes complémentaires d'encodage visuel dans V1 chez la souris ; développer un cadre théorique de réseaux thalamo-corticaux reliant régimes dynamiques et propriétés computationnelles ; étudier les mécanismes cellulaires et développementaux de la spécialisation inhibitrice, notamment le rôle différentiel des récepteurs NMDA dans les interneurones, avec une pertinence directe pour les dysfonctionnements interneuronaux associés à la schizophrénie ; et enfin examiner le rôle, encore largement méconnu, des interneurones de la couche 1 dans le façonnage des représentations sensorielles du cortex visuel.
+
+Dans son ensemble, mes recherches visent à relier le détail biophysique microscopique aux dynamiques macroscopiques fonctionnellement pertinentes, en associant théorie et expérimentation. 
+Ces résultats montrent que la flexibilité du calcul cortical n'est pas une propriété périphérique de l'activité neuronale, mais qu'elle repose sur des mécanismes cellulaires et de réseaux identifiables, en particulier le recrutement de différentes populations d'interneurones. La compréhension de cette flexibilité nécessite par ailleurs des cadres théoriques capables de relier la synapse unique aux dynamiques de réseaux à grande échelle.
+
+
